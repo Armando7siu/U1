@@ -16,7 +16,7 @@ document.getElementById("check").addEventListener("click", () => {
     if (navigator.serviceWorker.controller) {
         alert("El Service Worker está Activo y controlando la pagina actual");
     } else {
-        alert("El Service Worker NO está activo");
+        alert("El Service Worker  está activo");
     }
 });
 
@@ -28,4 +28,5 @@ if (Notification.permission ==="default")  {
         console.log("permiso de notificacion concedido." );
         }
     });
+
 }                                           
