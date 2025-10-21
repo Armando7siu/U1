@@ -2,7 +2,7 @@ let registration = null;
 
 function resgister_sw() {
     if('serviceWorker' in navigator) {
-        window.navigator.serviceWorker.register('./sw.js', {scope: './'})
+        window.navigator.serviceWorker.register('sw.js', {scope: './'})
         .then(res => {
             registration = res;
             console.log("Service Worker Successfully Registered.");
@@ -26,9 +26,10 @@ function unresgister_sw() {
 }
 
 window.addEventListener('click',() => {
-    fetch('./objet.png')
+    fetch('objet.png')
         .then(res => console.log('From script.js: ', res));
 });
 
 //resgister_service_worker();
+
 // unresgister_service_worker();
