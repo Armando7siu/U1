@@ -4,9 +4,9 @@ self.addEventListener('install', event => {
         caches.open('v3')
         .then(cache => {
             cache.addAll([
-                './',                  
-                './script.js',
-                './objet.png'
+                '',                  
+                'script.js',
+                'objet.png'
             ]);
             console.log("Assets cached.");
         })
@@ -71,4 +71,5 @@ self.addEventListener('fetch', event => {
 //             });
 //         })
 //     );
+
 // });
